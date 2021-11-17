@@ -1,13 +1,6 @@
 <?php
 
-$connection = new mysqli("localhost","root","","f_yr_project");
-
-
-	if ($connection->connect_error) {
-		die("Connection failed: " . $conn->connect_error);
-	}else{
-		echo "Everythings ok !";
-	}
+include 'connection.php';
 	
 
 	$sql_query = "INSERT INTO student (f__name,l_name) VALUES ('John', 'Doe')";
